@@ -1,11 +1,16 @@
+import { RxHamburgerMenu } from "react-icons/rx";
+
 const Herosection = () => {
   return (
     <section className="relative h-screen bg-cover bg-center bg-[url('assets/background.jpg')] text-white">
       <div className=" z-0 absolute inset-0 bg-black bg-opacity-70"></div>
 
-      <nav className="absolute top-0 z-20 flex w-full justify-between items-center px-10 py-8">
+      <nav className="absolute top-0 z-20 lg:flex w-full justify-between items-center px-10 py-8 hidden ">
         <div>
-          <h1>LOGO</h1>
+          <img
+            src="https://websitedemos.net/web-developer-04/wp-content/uploads/sites/1481/2023/06/logo.svg"
+            alt="Logo"
+          />
         </div>
         <div>
           <ul className="flex text-lg font-semibold gap-9 transition-all duration-200">
@@ -19,6 +24,17 @@ const Herosection = () => {
           <button className="ring-1 ring-white px-8 py-3 font-semibold hover:bg-white hover:text-blue-700 transition-all duration-200">
             Let's connect
           </button>
+        </div>
+      </nav>
+
+      <nav className="absolute top-0 z-20 flex w-full justify-between items-center px-5 py-4 lg:selection:hidden lg:hidden">
+        <img
+          src="https://websitedemos.net/web-developer-04/wp-content/uploads/sites/1481/2023/06/logo.svg"
+          alt="Logo"
+        />
+
+        <div className="p-3 border-2 border-blue-800 rounded-md text-xl text-blue-800">
+          <RxHamburgerMenu />
         </div>
       </nav>
 
