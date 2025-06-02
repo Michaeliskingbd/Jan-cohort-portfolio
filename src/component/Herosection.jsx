@@ -1,4 +1,5 @@
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-scroll";
 
 const Herosection = () => {
   return (
@@ -14,7 +15,10 @@ const Herosection = () => {
         </div>
         <div>
           <ul className="flex text-lg font-semibold gap-9 transition-all duration-200">
-            <li className="text-gray-400 hover:text-white">About</li>
+            <Link to="about" smooth={true} duration={500}>
+              <li className="text-gray-400 hover:text-white">About</li>
+            </Link>
+
             <li className="text-gray-400 hover:text-white">Portfolio</li>
             <li className="text-gray-400 hover:text-white">Services</li>
             <li className="text-gray-400 hover:text-white">Testimonials</li>
