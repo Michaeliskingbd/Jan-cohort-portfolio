@@ -1,7 +1,14 @@
+import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-scroll";
+import { RiCloseLargeFill } from "react-icons/ri";
 
 const Herosection = () => {
+  const [mobilenav, setMobileNav] = useState(false);
+
+  const toggleMobileNav = () => {
+    setMobileNav(!mobilenav);
+  };
   return (
     <section className="relative h-screen bg-cover bg-center bg-[url('assets/background.jpg')] text-white">
       <div className=" z-0 absolute inset-0 bg-black bg-opacity-70"></div>
@@ -37,8 +44,11 @@ const Herosection = () => {
           alt="Logo"
         />
 
-        <div className="p-3 border-2 border-blue-800 rounded-md text-xl text-blue-800">
-          <RxHamburgerMenu />
+        <div
+          onClick={toggleMobileNav}
+          className="p-3 z-[600] border-2 border-blue-800 rounded-md text-xl text-blue-800"
+        >
+          {mobilenav ? <RiCloseLargeFill /> : <RxHamburgerMenu />}
         </div>
       </nav>
 
@@ -61,6 +71,28 @@ const Herosection = () => {
           </div>
         </div>
       </section>
+
+      {mobilenav && (
+        <sidebar className=" z-[500] top-16 absolute h-fit w-full lg:hidden flex flex-col bg-[#1b1448] ">
+          <div>
+            <ul className="flex flex-col text-lg font-semibold  transition-all duration-200">
+              <li className="text-gray-400 hover:text-white border-b-2 border-white px-6 py-2">
+                About
+              </li>
+
+              <li className="text-gray-400 hover:text-white  border-b-2 border-white px-6 py-2">
+                Portfolio
+              </li>
+              <li className="text-gray-400 hover:text-white  border-b-2 border-white px-6 py-2">
+                Services
+              </li>
+              <li className="text-gray-400 hover:text-white  border-b-2 border-white px-6 py-2">
+                Testimonials
+              </li>
+            </ul>
+          </div>
+        </sidebar>
+      )}
     </section>
   );
 };
