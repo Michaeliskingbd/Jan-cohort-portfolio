@@ -1,6 +1,8 @@
 import About from "../component/About";
 import Herosection from "../component/Herosection";
 import Services from "../component/Services";
+import Stat from "../component/Stat";
+import Testimonials from "../component/testimonials";
 
 const Homepage = () => {
   return (
@@ -8,6 +10,8 @@ const Homepage = () => {
       <Herosection />
       <About />
       <Services />
+      <Stat />
+      <Testimonials />
     </div>
   );
 };
