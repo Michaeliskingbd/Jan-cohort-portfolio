@@ -1,4 +1,3 @@
-import React from "react";
 import TestimonialsProps from "./TestimonialsProps";
 
 const Testimonials = () => {
