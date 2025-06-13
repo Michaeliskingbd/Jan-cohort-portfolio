@@ -2,7 +2,7 @@ import React from "react";
 
 const TestimonialsProps = () => {
   return (
-    <div class="  rounded-lg shadow-lg bg-[#1b1448] p-6 space-y-4">
+    <div class=" shadow-lg bg-[#1b1448] p-6 space-y-4">
       <div class="flex items-center space-x-4">
         <div class="h-12 w-12 flex items-center justify-center bg-red-500 text-white text-lg font-semibold rounded-full">
           DJ

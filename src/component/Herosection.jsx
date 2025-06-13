@@ -27,8 +27,12 @@ const Herosection = () => {
             </Link>
 
             <li className="text-gray-400 hover:text-white">Portfolio</li>
-            <li className="text-gray-400 hover:text-white">Services</li>
-            <li className="text-gray-400 hover:text-white">Testimonials</li>
+            <Link to="service" smooth={true} duration={500}>
+              <li className="text-gray-400 hover:text-white">Service</li>
+            </Link>
+            <Link to="testimonial" smooth={true} duration={500}>
+              <li className="text-gray-400 hover:text-white">Testimonials</li>
+            </Link>
           </ul>
         </div>
         <div>

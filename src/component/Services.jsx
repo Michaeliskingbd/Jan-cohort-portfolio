@@ -2,7 +2,7 @@ import ServiceProps from "./ServiceProps";
 
 const Services = () => {
   return (
-    <section className="px-10 py-20 ">
+    <section id="service" className="px-10 py-20 ">
       <hr className="mb-5" />
       <h1 className="text-5xl mb-8 font-bold">Services</h1>
 

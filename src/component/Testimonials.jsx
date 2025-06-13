@@ -3,7 +3,7 @@ import TestimonialsProps from "./TestimonialsProps";
 
 const Testimonials = () => {
   return (
-    <section className="grid grid-cols-2 gap-4 px-10 ">
+    <section id="testimonial" className="grid grid-cols-2 gap-4 px-10 ">
       <TestimonialsProps />
       <TestimonialsProps />
       <TestimonialsProps />
